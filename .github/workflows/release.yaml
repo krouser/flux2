@@ -56,7 +56,7 @@ jobs:
       # Pinned to commit before https://github.com/fluxcd/pkg/pull/189 due to
       # introduction faulty behavior.
       - name: Generate OpenAPI JSON schemas from CRDs
-        uses: fluxcd/pkg//actions/crdjsonschema@49e26aa2ee9e734c3233c560253fd9542afe18ae
+        uses: fluxcd/pkg//actions/crdjsonschema@24cffe9be93d921948d68951cdbc66971f42cf26
         with:
           crd: all-crds.yaml
           output: schemas
